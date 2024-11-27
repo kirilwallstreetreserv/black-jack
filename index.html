@@ -1,15 +1,33 @@
-<html>
-    <head>
-        <link rel="stylesheet" href="index.css">
-    </head>
-    <body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Black Jack</title>
+</head>
+<body>
+    <div class="container">
         <h1>Blackjack</h1>
         <p id="message-el">Want to play a round?</p>
-        <p id="cards-el">Cards:</p>
-        <p id="sum-el">Sum:</p>
-        <button onclick="startGame()">START GAME</button>
-        <button onclick="newCard()">NEW CARD</button>
+        <div class="scores">
+            <p id="cards-el">Cards:</p>
+            <p id="sum-el">Sum:</p>
+          
+        </div>
+         <div class="buttons">
+            <button onclick="startGame()">START GAME</button>
+            <button onclick="newCard()">NEW CARD</button>    
+        </div>
         <p id="player-el"></p>
-        <script src="index.js"></script>
-    </body>
+        <div class="rules">
+            <p id="rules-el">Rules</p>
+            <p id="rules-el">Won: + 50 chips</p>
+            <p id="rules-el">Lose: - 40 chips</p>
+          
+        </div>
+    </div>
+  
+    <script src="index.js"></script>
+</body>
 </html>

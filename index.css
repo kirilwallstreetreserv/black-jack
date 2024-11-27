@@ -3,27 +3,54 @@ body {
     background-image: url("images/table.png");
     background-size: cover;
     font-weight: bold;
-    color: white;
+    color: rgb(0, 0, 0);
     text-align: center;
+    font-size: 20px;
 }
 
 h1 {
     color: goldenrod;
 }
-
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    min-width: 300px;
+    margin: auto;
+    flex-direction: column;
+    padding: 10px 80px;
+    border-radius:10px ;
+    gap: 20px;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
 #message-el {
     font-style: italic;
 }
 
+.rules{
+    color: #636161;
+    font-style: italic;
+    line-height: 5px;
+    font-size: 15px;
+}
+
 button {
-    color: #016f32;
-    width: 150px;
-    background: goldenrod;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    font-size: 15px;
+    color: white;
+    width: fit-content;
+    background-color: goldenrod;
+    padding: 10px 30px;
     font-weight: bold;
     border: none;
-    border-radius: 2px;
+    border-radius: 6px;
     margin-bottom: 2px;
     margin-top: 2px;
+    transition: .5s;
+}
+
+button:hover{
+    background-color: #FFD700;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.272);
 }
